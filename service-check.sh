@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# ./alive-check.sh $DAEMON_NAME
+# ./service-check.sh $DAEMON_NAME
 # running : 1, not running : 0 return.
 
 
