@@ -29,6 +29,10 @@ do
     do
         echo "=== $backup_dir/$curdate/$db";
 
+        if [[ "performance_schema" == "$db" || "sys" == "$db" || "information_schema" == "$db" ]];
+        then
+                continue;
+        fi
         if [ ! -d "$backup_dir/$curdate/$db" ]; then
             mkdir -p "$backup_dir/$curdate/$db"
         fi
